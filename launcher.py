@@ -15,10 +15,11 @@ def main():
     sys.path.insert(0, app_dir)
     sys.path.insert(0, os.path.join(app_dir, "database"))
 
-    db_path = os.path.join(app_dir, "ktisis.db")
-    if not os.path.exists(db_path):
-        from create_db import create_tables
-        create_tables()
+    # Τρέχει πάντα, όχι μόνο όταν λείπει η βάση - CREATE TABLE IF NOT EXISTS
+    # είναι ασφαλές σε υπάρχουσα βάση, και έτσι προστίθενται αυτόματα νέοι
+    # πίνακες από ενημερώσεις (π.χ. το 'users') σε παλιότερες εγκαταστάσεις.
+    from create_db import create_tables
+    create_tables()
 
     from streamlit.web import cli as stcli
 

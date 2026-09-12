@@ -19,6 +19,9 @@ from vehicles import add_vehicle, update_vehicle, delete_vehicle, list_vehicles,
 from reports import get_monthly_report, get_yearly_report, get_expense_breakdown_by_category
 from invoices import add_invoice, update_invoice, delete_invoice, list_invoices, get_total_unpaid
 from users import add_user, check_login
+from create_db import create_tables
+
+create_tables()
 
 st.set_page_config(page_title="Ktisis", layout="wide")
 
