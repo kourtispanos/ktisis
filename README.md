@@ -28,7 +28,7 @@
 
 ## 🚀 Για απλή χρήση (χωρίς εγκατάσταση Python)
 
-1. Κατέβασε το [`KtisisSetup.exe`](installer_output/KtisisSetup.exe)
+1. Κατέβασε το **[⬇️ KtisisSetup.exe](https://github.com/kourtispanos/ktisis/releases/latest/download/KtisisSetup.exe)**
 2. Άνοιξέ το, πάτα **Next → Next → Install**
 3. Η εφαρμογή ανοίγει αυτόματα στον browser σου
 
