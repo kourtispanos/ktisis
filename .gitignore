@@ -1,0 +1,17 @@
+# Προσωπικά δεδομένα / μυστικά - ποτέ στο GitHub
+ktisis.db
+local_settings.py
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# PyCharm
+.idea/
+
+# Build artifacts (φτιάχνονται ξανά με τις εντολές στο README)
+build/
+dist/
+installer_output/
+*.spec
