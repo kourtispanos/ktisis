@@ -4,9 +4,9 @@ import unittest
 sys.path.insert(0, os.path.dirname(__file__))
 
 from base import DBTestCase
-from clients import add_client, get_client_balances
-from income import add_income
-from projects import add_project
+from backend.services.people import add_client, get_client_balances
+from backend.services.finance import add_income
+from backend.services.projects import add_project
 
 
 class TestClientBalances(DBTestCase):

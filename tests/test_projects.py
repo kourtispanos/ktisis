@@ -4,11 +4,10 @@ import unittest
 sys.path.insert(0, os.path.dirname(__file__))
 
 from base import DBTestCase
-from clients import add_client
-from expenses import add_expense
-from projects import add_project, calculate_working_days, get_project_financials
-from wage_entries import add_wage_entry
-from workers import add_worker
+from backend.services.people import add_client
+from backend.services.finance import add_expense
+from backend.services.projects import add_project, calculate_working_days, get_project_financials
+from backend.services.people import add_wage_entry, add_worker
 
 
 class TestCalculateWorkingDays(unittest.TestCase):

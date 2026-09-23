@@ -5,10 +5,9 @@ import unittest
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 sys.path.insert(0, PROJECT_ROOT)
-sys.path.insert(0, os.path.join(PROJECT_ROOT, "database"))
 
-import db
-from create_db import create_tables
+from backend.database import db
+from backend.database.create_db import create_tables
 
 REAL_DB_PATH = os.path.abspath(os.path.join(PROJECT_ROOT, "ktisis.db"))
 

@@ -4,9 +4,9 @@ import unittest
 sys.path.insert(0, os.path.dirname(__file__))
 
 from base import DBTestCase
-from clients import add_client
-from income import add_income, get_total_vat_reserve
-from projects import add_project
+from backend.services.people import add_client
+from backend.services.finance import add_income, get_total_vat_reserve
+from backend.services.projects import add_project
 
 
 class TestVatReserve(DBTestCase):
